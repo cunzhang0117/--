@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cunzhang</title>
+    <link rel="shortcut icon" href="../IMG/char/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <!-- <script src="../JS/script.js"></script> -->
+  </head>
+  <body>
+    <div id="mainArea" class="mainArea">
+      <!-- 左側 -->
+      <div class="left">
+        <div class="profile">
+          <div class="photo">
+            <img
+              class="bgImg pixelArt"
+              src="../IMG/profile/photo_B.png"
+              alt=""
+            />
+
+            <!-- 轉轉小人 -->
+            <div class="charR">
+              <img
+                class="charImg pixelArt sitGame"
+                src="../IMG/char/char_click.gif"
+              />
+            </div>
+            <img
+              class="bgTop pixelArt"
+              src="../IMG/profile/photo_U.png"
+              alt=""
+            />
+          </div>
+          <div class="nav">
+            <img class="pixelArt" src="../IMG/profile/nav2.png" alt="" />
+            <p id="nowPageText">心得</p>
+            <ul class="pageSelect">
+              <li
+                class="page"
+                onclick="window.location.href='../HTML/index.html';"
+              >
+                主頁
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right" id="rightTop">
+        <!-- 文章區 -->
+        <div class="rwHere">
+          <div class="rwArea">
+            <div class="rwTittle">
+              <p class="rwT">MINDHACK</p>
+              <p class="rwDate">- 2023/12/20</p>
+            </div>
+            <div class="rwContent">
+              <div class="rwArticle">
+                <p style="font-size: 28px; align-self: center">
+                  ＞＞＞非常好遊戲，使我人生發生巨變＜＜＜
+                </p>
+                <img src="../IMG/game/review/mindhack/gameImg/01.jpg" alt="" />
+                <figcaption>sino醬BIG LOVE</figcaption>
+                <p>
+                  第一人稱2D遊戲（hOwWWw <br />
+                  完全看不到醫生（主角）的樣子，歡迎憑空想像☝️覆面愛好者大喜（根本不是覆面<br />
+                  作為可以入侵他人腦海的精神醫生，扮演著至關重要的角色，那就是把思想歪斜的傢伙們矯正過來！（by弄亂對方的腦子<br />
+                  一章對一位惡人，全員人外，畫風還非常好……<br />
+                </p>
+                <img src="../IMG/game/review/mindhack/gameImg/06.jpg" alt="" />
+                <figcaption>
+                  好消息，12月初的時候終於更新了繁中，更好推廣遊戲ㄌ
+                </figcaption>
+                <p>
+                  文字遊戲+選項分歧，不過主要是對話差分而已，目前不像有多結局的樣子<br />
+                  章節緩慢更新中……（對這款還沒出完<br />
+                  不過官推經常更新塗鴉、製作日誌和情報等！還有角色相關番外漫畫，不用擔心沒東西看<br />
+                </p>
+              </div>
+              <div class="rwImg">
+                <img
+                  id="left"
+                  class="slideIcon"
+                  src="../IMG/icon2.png"
+                  alt=""
+                />
+                <div class="slideImgs">
+                  <img
+                    src="../IMG/game/review/mindhack/gameImg/02.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="../IMG/game/review/mindhack/gameImg/03.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="../IMG/game/review/mindhack/gameImg/04.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="../IMG/game/review/mindhack/gameImg/05.jpg"
+                    alt=""
+                  />
+                </div>
+                <img id="right" class="slideIcon rIcon" src="../IMG/icon.png" />
+                <!-- 圖片放大區 -->
+                <div class="imgClick">
+                  <div class="closeImg"></div>
+                  <img src="" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 創作區 -->
+          <div class="rwAreaB">
+            <div class="myArt">
+              <span class="art folder" ondblclick="openFolder('art')">
+                <img class="pixelArt" src="../IMG/char/f.png" alt="" />
+                <p>圖片</p>
+              </span>
+              <span class="video folder" ondblclick="openFolder('video')">
+                <img class="pixelArt" src="../IMG/char/f.png" alt="" />
+                <p>影片</p>
+              </span>
+            </div>
+
+            <!-- 圖片資料夾 -->
+            <div class="artInfoFolder infoFolder lWindow">
+              <img class="pixelArt" src="../IMG/window/close.png" />
+              <p>圖片</p>
+              <span class="closeBtn" onclick="closeFolder('art')"></span>
+              <div class="imgNames">
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openImage('../IMG/game/review/mindhack/圖片/0426.gif', '--2023/04/26')"
+                  >--2023/04/26</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openImage('../IMG/game/review/mindhack/圖片/0514.gif','--2023/05/14')"
+                  >--2023/05/14</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openImage('../IMG/game/review/mindhack/圖片/0518.jpg', '--2023/05/18')"
+                  >--2023/05/18</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openImage('../IMG/game/review/mindhack/圖片/0519.jpg', '--2023/05/19')"
+                  >--2023/05/19</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openImage('../IMG/game/review/mindhack/圖片/0530.jpg', '--2023/05/30')"
+                  >--2023/05/30</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openImage('../IMG/game/review/mindhack/圖片/0603.jpg', '--2023/06/03')"
+                  >--2023/06/03</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openImage('../IMG/game/review/mindhack/圖片/0605.jpg', '--2023/06/05')"
+                  >--2023/06/05</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openImage('../IMG/game/review/mindhack/圖片/0613.gif', '--2023/06/13')"
+                  >--2023/06/13</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openImage('../IMG/game/review/mindhack/圖片/0718.jpg', '--2023/07/18')"
+                  >--2023/07/18</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openImage('../IMG/game/review/mindhack/圖片/0823.gif', '--2023/08/23')"
+                  >--2023/08/23</a
+                >
+              </div>
+            </div>
+            <!-- 影片資料夾 -->
+            <div class="videoInfoFolder infoFolder lWindow">
+              <img class="pixelArt" src="../IMG/window/close.png" />
+              <p>影片</p>
+              <span class="closeBtn" onclick="closeFolder('video')"></span>
+              <div class="imgNames">
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openVideo('../IMG/game/review/mindhack/影片/0507.mp4', '--2023/05/07')"
+                  >--2023/05/07</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openVideo('../IMG/game/review/mindhack/影片/0511.mp4','--2023/05/11')"
+                  >--2023/05/11</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openVideo('../IMG/game/review/mindhack/影片/0525.mp4', '--2023/05/25')"
+                  >--2023/05/25</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openVideo('../IMG/game/review/mindhack/影片/0609.mp4', '--2023/06/09')"
+                  >--2023/06/09</a
+                >
+              </div>
+            </div>
+
+            <!-- 圖片 -->
+            <span class="ImgWindow Window lWindow">
+              <div class="line"><p class="lineText">erere</p></div>
+              <span class="closeBtn" onclick="closeFolderImg('art')"
+                ><img class="pixelArt" src="../IMG/window/closex.png" alt=""
+              /></span>
+              <img class="artImg" src="" />
+            </span>
+
+            <!-- 影片 -->
+            <span class="videoWindow Window lWindow">
+              <div class="line"><p class="lineTextV">erere</p></div>
+              <span class="closeBtn" onclick="closeFolderImg('video')"
+                ><img class="pixelArt" src="../IMG/window/closex.png" alt=""
+              /></span>
+              <video
+                class="artVideo"
+                src="../IMG/game/review/mindhack/影片/0507.mp4"
+                autoplay
+                muted
+                controls
+              ></video>
+            </span>
+          </div>
+          <!-- 留言區 -->
+          <div class="rwAreaC">
+            <div class="typeComment">
+              <textarea
+                name="review"
+                id="Review"
+                rows="4"
+                placeholder="你也有想法？"
+                row="3"
+              ></textarea>
+            </div>
+            <div class="comment">
+              <!-- 單一留言盒 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footerArea">
+        <p>&copy;2023 CUNZHANG</p>
+        <div>
+          <a href="https://twitter.com/cunzhang0117" target="_blank">
+            <img src="../IMG/footer/twitter.png" alt="Twitter"
+          /></a>
+          <a href="https://www.plurk.com/cunzhang0117" target="_blank">
+            <img src="../IMG/footer/4875790_plurk_icon.png" alt="Plurk"
+          /></a>
+          <a href="#">
+            <img src="../IMG/footer/facebook.png" alt="Facebook"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="../JS/changPage.js"></script> -->
+    <script src="../JS/rw.js"></script>
+  </body>
+</html>

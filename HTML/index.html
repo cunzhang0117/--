@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cunzhang</title>
+    <link rel="shortcut icon" href="../IMG/char/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script src="../JS/script.js"></script>
+  </head>
+  <body>
+    <header id="banner" class="banner">
+      <section class="webWindows">
+        <div class="lWindow feeling pixelArt">
+          <img src="../IMG/window/feeling.png" alt="" />
+          <p class="windowTittle">狀態欄</p>
+          <p class="feelingText">我想睡覺……</p>
+        </div>
+        <div class="lWindow gameRecently">
+          <img src="../IMG/window/gameRecently.png" alt="" />
+          <p class="windowTittle">正在遊玩</p>
+          <p class="gameRecentlyText">Lethal Company中毒ing</p>
+          <img
+            class="gameRecentlyImg"
+            src="../IMG/window/1212_545.gif"
+            alt=""
+          />
+        </div>
+        <div class="lWindow blank pixelArt">
+          <img src="../IMG/window/blank.png" alt="" />
+          <p class="windowTittle">筆記欄</p>
+          <textarea
+            name="memo"
+            id="memo"
+            onclick="this.focus()"
+            placeholder="這裡這裡"
+            onkeydown="if(event.keyCode == 13) return false;"
+          ></textarea>
+        </div>
+        <div class="lWindow gameInfo pixelArt">
+          <img src="../IMG/window/gameInfo.png" alt="" />
+          <p class="windowTittle">這個很好玩！</p>
+          <p class="gameInfoTittle"></p>
+          <p class="gameInfoText"></p>
+        </div>
+      </section>
+      <section class="webTittle">
+        <div class="box">
+          <div class="typingText"><h1>HELLO THERE!&nbsp;</h1></div>
+        </div>
+        <p class="subtitle">
+          我是天竺鼠<br />這裡記錄著遊戲心得、相關創作<br /><br />請多指教&#9996;
+        </p>
+      </section>
+      <!-- 轉轉小人 -->
+      <section class="navLine">
+        <div class="char pixelArt" id="charSlide">
+          <div class="speakArea showDia">
+            <img class="speakBG pixelArt" src="../IMG/內容.png" alt="" />
+            <p class="speakContent">fifif</p>
+          </div>
+          <img
+            id="charSprite"
+            class="charImg pixelArt idle"
+            src="../IMG/char/char_idle.gif"
+          />
+        </div>
+      </section>
+    </header>
+
+    <div id="mainArea" class="mainArea">
+      <div class="left">
+        <div class="profile">
+          <div class="photo">
+            <img
+              class="bgImg pixelArt"
+              src="../IMG/profile/photo_B.png"
+              alt=""
+            />
+
+            <!-- 轉轉小人 -->
+            <div class="char inVisible" id="charShow">
+              <img
+                id="charGame"
+                class="charImg pixelArt turnGame"
+                src="../IMG/char/char_turnGame.gif"
+              />
+            </div>
+            <img
+              class="bgTop pixelArt"
+              src="../IMG/profile/photo_U.png"
+              alt=""
+            />
+          </div>
+          <div class="nav">
+            <img class="pixelArt" src="../IMG/profile/nav.png" alt="" />
+            <p id="nowPageText">主頁</p>
+            <ul class="pageSelect">
+              <li class="page" onclick="switchToHomePage()">主頁</li>
+              <li
+                class="page openPanel"
+                onmouseover="openPanel()"
+                onmouseout="closePanel()"
+              >
+                標籤
+              </li>
+              <li class="page" onclick="switchToWishList()">願望清單</li>
+            </ul>
+            <div
+              class="tag"
+              id="pageTag"
+              onmouseover="openPanel()"
+              onmouseout="closePanel()"
+            >
+              <img class="pixelArt" src="../IMG/profile/nav02.png" alt="" />
+              <ul style="list-style: none">
+                <li class="page type" onclick="changePageTag('horror')">
+                  恐怖
+                </li>
+                <li class="page type" onclick="changePageTag('story')">劇情</li>
+                <li class="page type" onclick="changePageTag('pixel')">像素</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right" id="rightTop">
+        <!-- 文章區 -->
+        <div class="articleArea openArea">
+          <!--------- 主頁心得 --------->
+          <div class="AreaA">
+            <section class="article part01">
+              <div class="content">
+                <img
+                  class="articleImg"
+                  src="../IMG/game/header/testHeader.png"
+                  alt=""
+                />
+                <div class="content2">
+                  <p class="articleTittle"></p>
+                  <p class="articleContent"></p>
+                  <p class="articleDate"></p>
+                  <a class="articleInfo" href="">繼續閱讀</a>
+                </div>
+              </div>
+            </section>
+            <section class="article part02">
+              <div class="line"></div>
+              <div class="content">
+                <img
+                  class="articleImg"
+                  src="../IMG/game/header/testHeader.png"
+                  alt=""
+                />
+                <div class="content2">
+                  <p class="articleTittle"></p>
+                  <p class="articleContent"></p>
+                  <p class="articleDate"></p>
+                  <a class="articleInfo" href="">繼續閱讀</a>
+                </div>
+              </div>
+            </section>
+            <section class="article part03">
+              <div class="line"></div>
+              <div class="content">
+                <img
+                  class="articleImg"
+                  src="../IMG/game/header/testHeader.png"
+                  alt=""
+                />
+                <div class="content2">
+                  <p class="articleTittle"></p>
+                  <p class="articleContent"></p>
+                  <p class="articleDate"></p>
+                  <a class="articleInfo" href="">繼續閱讀</a>
+                </div>
+              </div>
+            </section>
+            <section class="article part04">
+              <div class="line"></div>
+              <div class="content">
+                <img
+                  class="articleImg"
+                  src="../IMG/game/header/testHeader.png"
+                  alt=""
+                />
+                <div class="content2">
+                  <p class="articleTittle"></p>
+                  <p class="articleContent"></p>
+                  <p class="articleDate"></p>
+                  <a class="articleInfo" href="">繼續閱讀</a>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="changeBtn">
+            <button class="changePage" onclick="changeArticlePage('pre')">
+              &lt;
+            </button>
+            <p id="pageNum">1</p>
+            <button class="changePage" onclick="changeArticlePage('next')">
+              &gt;
+            </button>
+          </div>
+        </div>
+        <!------- 主頁分類區 --------->
+        <div class="tagArea">
+          <div id="addHere"></div>
+          <img class="dir" src="../IMG/char/Sprite-0001 (1).png" alt="" />
+        </div>
+        <!------- 願望清單分類區 --------->
+        <div class="wishArea">
+          <div class="areaW"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footerArea">
+        <p>&copy;2023 CUNZHANG</p>
+        <div>
+          <a href="https://twitter.com/cunzhang0117" target="_blank">
+            <img src="../IMG/footer/twitter.png" alt="Twitter"
+          /></a>
+          <a href="https://www.plurk.com/cunzhang0117" target="_blank">
+            <img src="../IMG/footer/4875790_plurk_icon.png" alt="Plurk"
+          /></a>
+          <a href="#">
+            <img src="../IMG/footer/facebook.png" alt="Facebook"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../JS/drag.js"></script>
+    <script src="../JS/aniCtrl.js"></script>
+    <script src="../JS/changPage.js"></script>
+  </body>
+</html>

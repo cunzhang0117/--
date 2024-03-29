@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cunzhang</title>
+    <link rel="shortcut icon" href="../IMG/char/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <!-- <script src="../JS/script.js"></script> -->
+  </head>
+  <body>
+    <div id="mainArea" class="mainArea">
+      <!-- 左側 -->
+      <div class="left">
+        <div class="profile">
+          <div class="photo">
+            <img
+              class="bgImg pixelArt"
+              src="../IMG/profile/photo_B.png"
+              alt=""
+            />
+
+            <!-- 轉轉小人 -->
+            <div class="charR">
+              <img
+                class="charImg pixelArt sitGame"
+                src="../IMG/char/char_click.gif"
+              />
+            </div>
+            <img
+              class="bgTop pixelArt"
+              src="../IMG/profile/photo_U.png"
+              alt=""
+            />
+          </div>
+          <div class="nav">
+            <img class="pixelArt" src="../IMG/profile/nav2.png" alt="" />
+            <p id="nowPageText">心得</p>
+            <ul class="pageSelect">
+              <li
+                class="page"
+                onclick="window.location.href='../HTML/index.html';"
+              >
+                主頁
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right" id="rightTop">
+        <!-- 文章區 -->
+        <div class="rwHere">
+          <div class="rwArea">
+            <div class="rwTittle">
+              <p class="rwT">Cult of the lamb</p>
+              <p class="rwDate">- 2023/12/20</p>
+            </div>
+            <div class="rwContent">
+              <div class="rwArticle">
+                <p>
+                  羊羊超可愛，但遊戲沒什麼劇情，後面搞建設跟推地圖有點作業感，不太喜歡<br />
+                  Narinder被擊敗後變成免洗NPC了啦XDD很難過ㄟ真的希望他有自己獨立的台詞<br />
+                  更正：今天才發現ㄊ還是有自己ㄉ任務ㄉ！是結婚讓小貓ooc了，<del
+                    >對不起</del
+                  >
+                </p>
+                <p>
+                  玩了DLC（或者說更新？）的部分<br />
+                  我不能⋯⋯接受⋯⋯獻祭Ratau⋯⋯他不是⋯⋯大家的爸爸嗎😭😭⋯⋯（不是<br />
+                  喜歡DLC新增的OST……COTL的音樂風格很強烈，尤其是那幾首BOSS戰的曲目　愛死
+                </p>
+                <img src="../IMG/game/review/cotl/gameImg/06.jpg" alt="" />
+                <figcaption>先從牆裡出來再說 bro</figcaption>
+                <p>
+                  這遊戲的難度真的很貼心，成就裡關於BOSS的挑戰好像也沒限定難度？用最輕鬆的方式就容易賽過去，佛心遊戲<br />
+                  但也因此作業感again，還是我沒有挑戰遊戲的上進心XDD<br />
+                  不過官方還會繼續更新遊戲內容，之後再打開ㄅ！之前說遊戲沒劇情也說錯了，其實還是有在推進ㄉ！
+                </p>
+              </div>
+              <div class="rwImg">
+                <img
+                  id="left"
+                  class="slideIcon"
+                  src="../IMG/icon2.png"
+                  alt=""
+                />
+                <div class="slideImgs">
+                  <img src="../IMG/game/review/cotl/gameImg/01.jpg" alt="" />
+                  <img src="../IMG/game/review/cotl/gameImg/02.jpg" alt="" />
+                  <img src="../IMG/game/review/cotl/gameImg/03.jpg" alt="" />
+                  <img src="../IMG/game/review/cotl/gameImg/04.jpg" alt="" />
+                  <img src="../IMG/game/review/cotl/gameImg/05.jpg" alt="" />
+                </div>
+                <img id="right" class="slideIcon rIcon" src="../IMG/icon.png" />
+                <!-- 圖片放大區 -->
+                <div class="imgClick">
+                  <div class="closeImg"></div>
+                  <img src="../IMG/game/review/cotl/gameImg/01.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 創作區 -->
+          <div class="rwAreaB">
+            <div class="myArt">
+              <span class="art folder" ondblclick="openFolder('art')">
+                <img class="pixelArt" src="../IMG/char/f.png" alt="" />
+                <p>圖片</p>
+              </span>
+            </div>
+
+            <div class="artInfoFolder infoFolder lWindow">
+              <img class="pixelArt" src="../IMG/window/close.png" />
+              <p>圖片</p>
+              <span class="closeBtn" onclick="closeFolder('art')"></span>
+              <div class="imgNames">
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openImage('../IMG/game/review/cotl/art/csc.png', '--2023/10/16')"
+                  >--2023/10/16</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openImage('../IMG/game/review/cotl/art/Ss.png', '--2023/10/16')"
+                  >--2023/10/16</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openImage('../IMG/game/review/cotl/art/d.jpg','--2023/10/20')"
+                  >--2023/10/20</a
+                >
+                <a
+                  class="imgName"
+                  href="javascript:void(0);"
+                  onclick="openImage('../IMG/game/review/cotl/art/原.png', '--2023/10/20')"
+                  >--2023/10/20</a
+                >
+              </div>
+            </div>
+
+            <span class="ImgWindow Window lWindow">
+              <div class="line"><p class="lineText">erere</p></div>
+              <span class="closeBtn" onclick="closeFolderImg('art')"
+                ><img class="pixelArt" src="../IMG/window/closex.png" alt=""
+              /></span>
+              <img
+                class="artImg"
+                src="../IMG/game/review/cotl/art/csc.png"
+                alt=""
+              />
+            </span>
+          </div>
+          <!-- 留言區 -->
+          <div class="rwAreaC">
+            <div class="typeComment">
+              <textarea
+                name="review"
+                id="Review"
+                rows="4"
+                placeholder="你也有想法？"
+                row="3"
+              ></textarea>
+            </div>
+            <div class="comment">
+              <!-- 單一留言盒 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footerArea">
+        <p>&copy;2023 CUNZHANG</p>
+        <div>
+          <a href="https://twitter.com/cunzhang0117" target="_blank">
+            <img src="../IMG/footer/twitter.png" alt="Twitter"
+          /></a>
+          <a href="https://www.plurk.com/cunzhang0117" target="_blank">
+            <img src="../IMG/footer/4875790_plurk_icon.png" alt="Plurk"
+          /></a>
+          <a href="#">
+            <img src="../IMG/footer/facebook.png" alt="Facebook"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="../JS/changPage.js"></script> -->
+    <script src="../JS/rw.js"></script>
+  </body>
+</html>
